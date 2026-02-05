@@ -1,0 +1,60 @@
+### Get all users
+
+GET http://localhost:1818/user-api/users
+
+### Create a user
+POST http://localhost:1818/user-api/users
+Content-Type: application/json
+
+{
+    "id": 100,
+    "name": "ravi",
+    "age": 19 
+}
+
+### Update a user by id (Changed 'id' to '100')
+PUT http://localhost:1818/user-api/users/100
+Content-Type: application/json
+
+{
+    "id": 100,
+    "name": "kumar",
+    "age": 20 
+}
+
+### Read a user by id
+GET http://localhost:1818/user-api/users/100
+
+### Remove a user by id (Changed 'id' to '100')
+DELETE http://localhost:1818/user-api/users/100
+
+### Get all products
+GET http://localhost:1818/product-api/products
+
+### Create a product
+POST http://localhost:1818/product-api/products
+Content-Type: application/json
+
+{
+    "productID": 200,
+    "name": "laptop",
+    "price": 1500,
+    "brand": "Dell"
+}
+
+### Update a product by ID
+PUT http://localhost:1818/product-api/products/200
+Content-Type: application/json
+
+{
+    "productID": 200,
+    "name": "laptop",
+    "price": 1400,
+    "brand": "Dell"
+}
+
+### Read a product by ID
+GET http://localhost:1818/product-api/products/200
+
+### Remove a product by ID
+DELETE http://localhost:1818/product-api/products/200

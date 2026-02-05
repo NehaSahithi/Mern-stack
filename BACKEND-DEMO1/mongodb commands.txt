@@ -1,0 +1,8 @@
+// create db
+use db_name
+
+// read databases
+show databases
+
+// create collection
+db.Createconnections

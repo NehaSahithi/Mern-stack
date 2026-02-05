@@ -1,0 +1,25 @@
+GET http://127.0.0.1:1818/users
+###
+POST http://127.0.0.1:1818/user
+Content-Type: application/json
+
+{
+    "id":100,
+    "name": "ravi",
+    "age": 19 
+    }
+
+###
+PUT http://127.0.0.1:1818/users/id
+Content-Type: application/json
+
+{
+    "id":100,
+    "name": "kumar",
+    "age": 20 
+    }
+
+### Read a user by id
+GET http://127.0.0.1:1818/users/100
+
+DELETE http://127.0.0.1:1818/users/id
