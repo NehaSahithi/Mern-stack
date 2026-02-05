@@ -1,0 +1,33 @@
+### Get all products
+GET http://127.0.0.1:1818/products
+
+### Create a product
+POST http://127.0.0.1:1818/products
+Content-Type: application/json
+
+{
+    "productID": 200,
+    "name": "laptop",
+    "price": 1500,
+    "brand": "Dell"
+}
+
+### Update a product by ID
+PUT http://127.0.0.1:1818/products/200
+Content-Type: application/json
+
+{
+    "productID": 200,
+    "name": "laptop",
+    "price": 1400,
+    "brand": "Dell"
+}
+
+### Read a product by ID
+GET http://127.0.0.1:1818/products/200
+
+### Read products by brand
+GET http://127.0.0.1:1818/products/brand/Dell
+
+### Remove a product by ID
+DELETE http://127.0.0.1:1818/products/200
